@@ -1,9 +1,10 @@
-spring:
- application:
-  name: s3food-discovery-server
 
- cloud:
-    config:
-      uri: https://s3food-config-server.herokuapp.com
- 
+      
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    
+server:
+  port: 9988
   
